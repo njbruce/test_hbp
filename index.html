@@ -1,3 +1,13 @@
 <body>
 TEST
+
+  <script src="https://unpkg.com/ngl"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("viewport");
+      stage.loadFile("rcsb://1cjk", {defaultRepresentation: true});
+    });
+  </script>
+  <div id="viewport" style="width:400px; height:300px;"></div>
+
 </body>
